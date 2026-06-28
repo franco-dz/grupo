@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediTurnos - Login Profesional</title>
+
+    <!-- Conecta este HTML con su CSS propio -->
+    <link rel="stylesheet" href="login-profesional.css">
+</head>
+<body>
+
+    <!-- HEADER: Menú superior simple para profesionales -->
+    <header class="profesional-header">
+        <div class="profesional-logo">MediTurnos Profesional</div>
+        <a href="index.html">Volver al inicio</a>
+    </header>
+
+    <!-- MAIN: Contenido central del login profesional -->
+    <main class="profesional-main">
+
+        <!-- TARJETA: Login privado para médicos o profesionales -->
+        <section class="profesional-tarjeta">
+            <h1>Ingreso profesional</h1>
+            <p>
+                Esta sección es solo para profesionales autorizados por la administración
+                de la clínica o consultorio.
+            </p>
+
+            <!-- FORMULARIO: Maqueta visual, no valida datos reales -->
+            <form>
+                <!-- Matrícula o email profesional -->
+                <label for="matricula">Matrícula o email profesional</label>
+                <input type="text" id="matricula" name="matricula" placeholder="Ejemplo: M.N. 123456">
+
+                <!-- Contraseña del profesional -->
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Ingresá tu contraseña">
+
+                <!-- Botón que simula el ingreso profesional -->
+                <a class="profesional-boton" href="#">Ingresar como profesional</a>
+            </form>
+
+            <!-- Aclaración importante: el profesional no crea cuenta pública -->
+            <p class="profesional-aviso">
+                El acceso profesional es otorgado por la administración. No se crean cuentas profesionales desde la web pública.
+            </p>
+        </section>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* =====================================================
+   ARCHIVO: login-paciente.css
+   Este archivo controla SOLO login-paciente.html
+===================================================== */
+
+/* VARIABLES DE ESTA PÁGINA */
+:root {
+    --color-azul: #2b6cb0;
+    --color-fondo: #f4f6f8;
+    --color-blanco: #ffffff;
+    --color-texto: #000000;
+    --color-borde: #cccccc;
+}
+
+/* BODY: Estilo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+/* HEADER: Barra superior sencilla */
+.login-paciente-header {
+    background-color: var(--color-blanco);
+    border-bottom: 1px solid var(--color-borde);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.login-paciente-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-azul);
+}
+
+.login-paciente-header a {
+    color: var(--color-azul);
+    text-decoration: none;
+}
+
+/* MAIN: Centra la tarjeta del formulario */
+.login-paciente-main {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* TARJETA: Caja blanca del login */
+.login-paciente-tarjeta {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-borde);
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 380px;
+}
+
+.login-paciente-tarjeta h1 {
+    margin-top: 0;
+    color: var(--color-azul);
+}
+
+/* LABEL: Texto arriba de cada campo */
+.login-paciente-tarjeta label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* INPUT: Campos para escribir DNI y contraseña */
+.login-paciente-tarjeta input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-borde);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* BOTÓN: Se hizo con etiqueta <a> para que pueda redirigir en la maqueta */
+.login-paciente-boton {
+    display: block;
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* TEXTO FINAL: Link para crear cuenta */
+.login-paciente-texto-final {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-paciente-texto-final a {
+    color: var(--color-azul);
+}

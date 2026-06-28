@@ -1,0 +1,126 @@
+/* =====================================================
+   ARCHIVO: registro-paciente.css
+   Este archivo controla SOLO registro-paciente.html
+===================================================== */
+
+/* VARIABLES SIMPLES */
+:root {
+    --color-azul: #2b6cb0;
+    --color-fondo: #f4f6f8;
+    --color-blanco: #ffffff;
+    --color-texto: #000000;
+    --color-borde: #cccccc;
+}
+
+/* BODY */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+/* HEADER */
+.registro-header {
+    background-color: var(--color-blanco);
+    border-bottom: 1px solid var(--color-borde);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.registro-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-azul);
+}
+
+.registro-header a {
+    color: var(--color-azul);
+    text-decoration: none;
+}
+
+/* MAIN: Contenedor general del registro */
+.registro-main {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* INFO: Texto que explica el objetivo del registro */
+.registro-info {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-borde);
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.registro-info h1 {
+    margin-top: 0;
+    color: var(--color-azul);
+}
+
+/* TARJETA: Caja del formulario */
+.registro-tarjeta {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-borde);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+/* LABEL */
+.registro-tarjeta label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+/* INPUTS */
+.registro-tarjeta input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-borde);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* CHECKBOX: Ajuste para que no ocupe todo el ancho */
+.registro-check {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.registro-check input {
+    width: auto;
+}
+
+.registro-check label {
+    margin: 0;
+}
+
+/* BOTÓN */
+.registro-boton {
+    display: block;
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* TEXTO FINAL */
+.registro-texto-final {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.registro-texto-final a {
+    color: var(--color-azul);
+}

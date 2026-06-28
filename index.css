@@ -1,0 +1,227 @@
+/* =====================================================
+   ARCHIVO: index.css
+   Este archivo controla SOLO la página index.html
+   Página principal pública de MediTurnos
+===================================================== */
+
+/* VARIABLES SIMPLES
+   Las variables sirven para guardar colores y reutilizarlos.
+   Si querés cambiar el color azul de toda esta página, cambiás solo esta variable.
+*/
+:root {
+    --color-azul: #2b6cb0;
+    --color-azul-claro: #e8f1fb;
+    --color-fondo: #f4f6f8;
+    --color-blanco: #ffffff;
+    --color-texto: #000000;
+    --color-borde: #cccccc;
+}
+
+/* BODY
+   Estilo general de toda la página.
+*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+/* HEADER
+   Menú superior de la landing.
+*/
+.index-header {
+    background-color: var(--color-blanco);
+    border-bottom: 1px solid var(--color-borde);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* LOGO
+   Texto simple de MediTurnos.
+*/
+.index-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-azul);
+}
+
+/* MENÚ
+   Contenedor de los links Inicio, Nosotros, Servicios y Contacto.
+*/
+.index-menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+/* LINK PROFESIONAL
+   Se deja más simple para que no compita con el botón principal del paciente.
+*/
+.index-link-profesional {
+    color: var(--color-azul);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* HERO
+   Primera sección principal de la landing.
+*/
+.index-hero {
+    padding: 50px 30px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* TEXTO DEL HERO
+   Contenedor del título, descripción y botones.
+*/
+.index-hero-texto {
+    max-width: 500px;
+}
+
+.index-hero-texto h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.index-hero-texto p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+/* BOTONES
+   Contenedor de los botones principales.
+*/
+.index-botones {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+/* BOTÓN PRINCIPAL
+   Lleva al registro del paciente para sacar turno.
+*/
+.index-boton-principal {
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+/* BOTÓN SECUNDARIO
+   Lleva al login del paciente que ya tiene cuenta.
+*/
+.index-boton-secundario {
+    background-color: var(--color-blanco);
+    color: var(--color-texto);
+    border: 1px solid var(--color-borde);
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+/* TEXTO DE AYUDA
+   Explica por qué el paciente debe crear cuenta.
+*/
+.index-ayuda {
+    font-size: 14px;
+    background-color: var(--color-azul-claro);
+    padding: 12px;
+    border-radius: 6px;
+}
+
+/* CAJA TURNO
+   Caja visual simple que simula un turno confirmado.
+*/
+.index-caja-turno {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-borde);
+    border-radius: 10px;
+    padding: 25px;
+    width: 260px;
+}
+
+.index-caja-turno h2 {
+    margin-top: 0;
+    color: var(--color-azul);
+}
+
+/* SECCIONES GENERALES
+   Se usa para Nosotros, Servicios y Contacto.
+*/
+.index-seccion {
+    background-color: var(--color-blanco);
+    margin: 25px auto;
+    padding: 30px;
+    max-width: 900px;
+    border-radius: 10px;
+    border: 1px solid var(--color-borde);
+}
+
+.index-seccion h2 {
+    margin-top: 0;
+    color: var(--color-azul);
+}
+
+/* TARJETAS DE SERVICIOS
+   Contenedor de las tres tarjetas.
+*/
+.index-tarjetas {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* TARJETA INDIVIDUAL
+   Cada servicio aparece dentro de esta caja.
+*/
+.index-tarjeta {
+    border: 1px solid var(--color-borde);
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 200px;
+}
+
+/* FOOTER
+   Pie de página.
+*/
+.index-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: var(--color-blanco);
+    border-top: 1px solid var(--color-borde);
+}
+
+/* RESPONSIVE BÁSICO
+   En pantallas pequeñas el contenido se acomoda en una columna.
+*/
+@media (max-width: 700px) {
+    .index-header {
+        display: block;
+        text-align: center;
+    }
+
+    .index-menu {
+        margin: 15px 0;
+    }
+
+    .index-hero {
+        padding: 30px 15px;
+    }
+
+    .index-hero-texto h1 {
+        font-size: 28px;
+    }
+}

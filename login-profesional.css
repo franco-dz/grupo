@@ -1,0 +1,102 @@
+/* =====================================================
+   ARCHIVO: login-profesional.css
+   Este archivo controla SOLO login-profesional.html
+===================================================== */
+
+/* VARIABLES SIMPLES */
+:root {
+    --color-azul-oscuro: #1f3a5f;
+    --color-fondo: #eef1f4;
+    --color-blanco: #ffffff;
+    --color-texto: #000000;
+    --color-borde: #bbbbbb;
+}
+
+/* BODY */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+/* HEADER: Barra superior del acceso profesional */
+.profesional-header {
+    background-color: var(--color-azul-oscuro);
+    color: var(--color-blanco);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO PROFESIONAL */
+.profesional-logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.profesional-header a {
+    color: var(--color-blanco);
+    text-decoration: none;
+}
+
+/* MAIN: Centra la tarjeta del login profesional */
+.profesional-main {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* TARJETA: Caja blanca del formulario profesional */
+.profesional-tarjeta {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    padding: 30px;
+    width: 100%;
+    max-width: 420px;
+}
+
+.profesional-tarjeta h1 {
+    margin-top: 0;
+    color: var(--color-azul-oscuro);
+}
+
+/* LABEL */
+.profesional-tarjeta label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* INPUT */
+.profesional-tarjeta input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-borde);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* BOTÓN PROFESIONAL */
+.profesional-boton {
+    display: block;
+    background-color: var(--color-azul-oscuro);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* AVISO: Texto pequeño con aclaración de permisos */
+.profesional-aviso {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid var(--color-borde);
+    padding-top: 15px;
+}

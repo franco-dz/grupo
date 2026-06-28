@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediTurnos - Registro Paciente</title>
+
+    <!-- Conecta este HTML con su CSS propio -->
+    <link rel="stylesheet" href="registro-paciente.css">
+</head>
+<body>
+
+    <!-- HEADER: Menú superior simple -->
+    <header class="registro-header">
+        <div class="registro-logo">MediTurnos</div>
+        <a href="index.html">Volver al inicio</a>
+    </header>
+
+    <!-- MAIN: Contenido principal del registro -->
+    <main class="registro-main">
+
+        <!-- SECCIÓN INFORMATIVA: Explica por qué se piden los datos -->
+        <section class="registro-info">
+            <h1>Crear cuenta paciente</h1>
+            <p>
+                Completá tus datos para poder solicitar turnos y recibir confirmaciones.
+                Esta es una maqueta, por eso el formulario no guarda datos reales.
+            </p>
+        </section>
+
+        <!-- FORMULARIO DE REGISTRO: Datos básicos del paciente -->
+        <section class="registro-tarjeta">
+            <form>
+                <!-- Nombre completo del paciente -->
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ejemplo: Ana López">
+
+                <!-- DNI del paciente -->
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" name="dni" placeholder="Ejemplo: 12345678">
+
+                <!-- Teléfono para recordatorios o contacto -->
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ejemplo: 11 5555-1234">
+
+                <!-- Email para contacto o confirmación -->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Ejemplo: paciente@email.com">
+
+                <!-- Contraseña del paciente -->
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Crear contraseña">
+
+                <!-- Repetir contraseña para confirmar -->
+                <label for="password2">Repetir contraseña</label>
+                <input type="password" id="password2" name="password2" placeholder="Repetir contraseña">
+
+                <!-- Check simple de aceptación -->
+                <div class="registro-check">
+                    <input type="checkbox" id="terminos" name="terminos">
+                    <label for="terminos">Acepto los términos del sistema</label>
+                </div>
+
+                <!-- Botón que simula crear cuenta -->
+                <a class="registro-boton" href="login-paciente.html">Crear cuenta</a>
+            </form>
+
+            <p class="registro-texto-final">
+                ¿Ya tenés cuenta?
+                <a href="login-paciente.html">Iniciar sesión</a>
+            </p>
+        </section>
+
+    </main>
+
+</body>
+</html>
